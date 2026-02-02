@@ -101,6 +101,11 @@ export interface ScrollableTabViewProperties extends React.Props<ScrollableTabVi
      * the siblings, default to 0 === render current page.
      */
     prerenderingSiblingsNumber?: number;
+
+    /**
+     * Children elements with tabLabel props
+     */
+    children?: React.ReactElement<TabProps>[] | React.ReactElement<TabProps>;
 }
 
 export type TabBarProps<T = {}> = T & {
